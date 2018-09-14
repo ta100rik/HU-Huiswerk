@@ -1,3 +1,3 @@
 # HU-Huiswerk
 
-Alle huiswerk opdrachten
+Alle huiswerk opdrachten van python blok a
