@@ -3,10 +3,9 @@ def convert(Graden):
    return result
 
 def table():
-
-    print(' F        C')
+    template = '{:5} {:2}'
+    print(template.format('F','C'))
     for temp in range(-30,41,10):
-        Fahrenheit =  convert(temp)
-        print(str(Fahrenheit) + '    ' + str(temp))
-
+        Fahrenheit = convert(temp)
+        print(template.format(str(Fahrenheit),str(temp)))
 table()
