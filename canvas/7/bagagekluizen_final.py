@@ -1,11 +1,4 @@
-    '''
-    Welcome to the Locker safe,
-    
-    This locker safe is not hashed because the assignment didn't told me to
-    Salt is already placed but not fully because als the assignment was not right
-    '''
-    # welcome message
-    print('Welcome,\n To the luggage lock system\n')
+print('Welcome,\n To the luggage lock system\n')
 
     def lockfree():
         # opening the file
