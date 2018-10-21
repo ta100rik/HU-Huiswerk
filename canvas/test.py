@@ -1,34 +1,11 @@
-{
- "cells": [
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {
-    "collapsed": true
-   },
-   "outputs": [],
-   "source": []
-  }
- ],
- "metadata": {
-  "kernelspec": {
-   "display_name": "Python 2",
-   "language": "python",
-   "name": "python2"
-  },
-  "language_info": {
-   "codemirror_mode": {
-    "name": "ipython",
-    "version": 2
-   },
-   "file_extension": ".py",
-   "mimetype": "text/x-python",
-   "name": "python",
-   "nbconvert_exporter": "python",
-   "pygments_lexer": "ipython2",
-   "version": "2.7.6"
-  }
- },
- "nbformat": 4,
- "nbformat_minor": 0
-}
+bestand=open('kaartnummers.txt', 'r')
+data = bestand.read()
+numberOfLines = len(data.splitlines())
+print('Deze file telt '+str(numberOfLines)+' regels')
+list = data.splitlines()
+kaartnummer = []
+for item in list:
+    item = item.split(',')
+    kaartnummer.append(item[0])
+maximalekaartnummer = max(kaartnummer)
+indexmax = kaartnummer.index(max(kaartnummer)) + 1
